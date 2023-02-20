@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Form</title>
+<style>
+    .gridform {
+        display: grid;
+        grid-template-columns: [labels] auto [controls] 1fr;
+        grid-gap: 10px;
+        background-color: aquamarine;
+        padding: 10px;
+        grid-auto-flow: row;
+        
+    }
+    .gridform label {
+        grid-column: labels;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gridform input, .gridform textarea {
+        grid-column: controls;
+        padding: 10px;
+    }
+    .gridform2  {
+        display: grid;
+        grid-template-columns: [labels] 1fr [controls] auto;
+        grid-gap: 10px;
+        background-color: aquamarine;
+        padding: 10px;
+        grid-auto-flow: row;
+    }
+    .gridform2 label{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        grid-column: labels;
+    }
+
+    .gridform2 textarea, .gridform2 input{
+        grid-column: controls;
+        padding: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h2>Grid Form</h2>
+    <form action="" class="gridform">
+        <label for="customername">Name</label>
+        <input type="cotumername" name="costumername" id="customername">
+        <label for="emailaddress">Email</label>
+        <input type="email" name="emailaddress" id="emailaddress">
+        <label for="">Mobile Number</label>
+        <input type="number" name="" id="">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" maxlength="500"></textarea>
+
+        <input type="submit">
+    </form>
+
+    <h2>Grid Form2</h2>
+    <div class="gridform2">
+    
+        <label for="customername">Name</label>
+        <input type="cotumername" name="costumername" id="customername">
+        <label for="emailaddress">Email</label>
+        <input type="email" name="emailaddress" id="emailaddress">
+        <label for="">Mobile Number</label>
+        <input type="number" name="" id="">        
+    </form>
+    </div>
+
+    <div class="gridform2">
+    <label for="comment">Comment</label>
+     <textarea name="comment" id="comment" cols="30" rows="7" maxlength="500"></textarea>
+     <input type="submit">
+    </div>        
+</body>
+</html>

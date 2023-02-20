@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+<style>
+    body{
+        background-color: lightgreen;
+        color: red;
+    }
+    @media screen and (min-width:320px) and (max-width:768px){
+        body{
+            background-color: lightblue;
+            color: darkred;
+        }
+      
+    }
+    /* smart phone portrait */
+    @media screen and (min-width:320px) and (max-width:480px){
+        body{
+            background-color: lightskyblue;
+            color: darkred;
+        }
+        
+    }
+    /* media screen smart phone portrait */
+    @media screen and (min-width:320px) {
+        body{
+            background-color: lightseagreen;
+            color: darkred;
+        }
+        
+    }
+    /* tablet and ipad portrait and lanscape */
+    @media screen and (min-width:768px) and (max-width:1024px){
+        body{
+            background-color: lightpink;
+            color: darkred;
+        }
+        
+    }
+    /* desktop laptop display */
+    @media screen and (min-width:1224px){
+        body{
+            background-color: lightgray;
+            color: darkred;
+        }
+        
+    }
+    /* Media screen */
+    @media screen and (min-width:1824px){
+        body{
+            background-color: lightcoral;
+            color: darkred;
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <h2>Media Query Sample</h2>
+    <p>When the width of this page is 600 pixels or less, The background color is light blue, Otherwise it is lightgreen.</p>
+
+</body>
+</html>
